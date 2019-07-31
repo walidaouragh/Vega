@@ -47,6 +47,9 @@
         <e p="Controllers" t="Include">
           <e p="ValuesController.cs" t="Include" />
         </e>
+        <e p="DbContext" t="Include">
+          <e p="VegaDbContext.cs" t="Include" />
+        </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp2.2" t="Include">
