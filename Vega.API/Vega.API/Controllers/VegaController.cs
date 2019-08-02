@@ -6,6 +6,7 @@ using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Vega.API.Repository;
+using Vega.API.Models;
 
 namespace Vega.API.Controllers
 {
@@ -26,9 +27,9 @@ namespace Vega.API.Controllers
         public async Task<IActionResult> GetMakes()
         {
             /*var Id = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier).Value);*/
-            var makes = await _vegaRepository.GetVegaMakes().ToListAsync();
+            var makes = await _vegaRepository.GetMakes().ToListAsync();
 
-            var makesToReturn = _mapper.Map<IEnumerable<Models.Vega>>(makes);
+            var makesToReturn = _mapper.Map<IEnumerable<Make>>(makes);
             
             return Ok(makesToReturn);
         }

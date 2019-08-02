@@ -3,40 +3,6 @@
   <component name="ContentModelStore">
     <e p="C:\Users\waouragh\.Rider2019.1\system\extResources" t="IncludeRecursive" />
     <e p="C:\Users\waouragh\.Rider2019.1\system\resharper-host\local\Transient\ReSharperHost\v191\SolutionCaches\_Vega.API.-1712397412.00" t="ExcludeRecursive" />
-    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\node_modules\@angular\animations" t="IncludeRecursive" />
-    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\node_modules\@angular\cli" t="IncludeRecursive" />
-    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\node_modules\@angular\common" t="IncludeRecursive" />
-    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\node_modules\@angular\compiler" t="IncludeRecursive" />
-    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\node_modules\@angular\compiler-cli" t="IncludeRecursive" />
-    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\node_modules\@angular\core" t="IncludeRecursive" />
-    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\node_modules\@angular\forms" t="IncludeRecursive" />
-    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\node_modules\@angular\platform-browser" t="IncludeRecursive" />
-    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\node_modules\@angular\platform-browser-dynamic" t="IncludeRecursive" />
-    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\node_modules\@angular\router" t="IncludeRecursive" />
-    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\node_modules\@angular-devkit\build-angular" t="IncludeRecursive" />
-    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\node_modules\@types" t="IncludeRecursive">
-      <e p="events" t="IncludeRecursive" />
-      <e p="jasmine" t="IncludeRecursive" />
-      <e p="jasminewd2" t="IncludeRecursive" />
-      <e p="minimatch" t="IncludeRecursive" />
-      <e p="node" t="IncludeRecursive" />
-      <e p="source-list-map" t="IncludeRecursive" />
-    </e>
-    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\node_modules\codelyzer" t="IncludeRecursive" />
-    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\node_modules\jasmine-core" t="IncludeRecursive" />
-    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\node_modules\jasmine-spec-reporter" t="IncludeRecursive" />
-    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\node_modules\karma" t="IncludeRecursive" />
-    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\node_modules\karma-chrome-launcher" t="IncludeRecursive" />
-    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\node_modules\karma-coverage-istanbul-reporter" t="IncludeRecursive" />
-    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\node_modules\karma-jasmine" t="IncludeRecursive" />
-    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\node_modules\karma-jasmine-html-reporter" t="IncludeRecursive" />
-    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\node_modules\protractor" t="IncludeRecursive" />
-    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\node_modules\rxjs" t="IncludeRecursive" />
-    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\node_modules\source-map" t="IncludeRecursive" />
-    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\node_modules\ts-node" t="IncludeRecursive" />
-    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\node_modules\tslib" t="IncludeRecursive" />
-    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\node_modules\tslint" t="IncludeRecursive" />
-    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\node_modules\zone.js" t="IncludeRecursive" />
     <e p="C:\Users\waouragh\Projects\Vega\Vega.API" t="IncludeFlat">
       <e p="packages" t="ExcludeRecursive" />
       <e p="Vega.API" t="IncludeRecursive">
@@ -46,9 +12,22 @@
         <e p="bin" t="ExcludeRecursive" />
         <e p="Controllers" t="Include">
           <e p="ValuesController.cs" t="Include" />
+          <e p="VegaController.cs" t="Include" />
         </e>
         <e p="DbContext" t="Include">
           <e p="VegaDbContext.cs" t="Include" />
+        </e>
+        <e p="Migrations" t="Include">
+          <e p="20190802172831_Vega.cs" t="Include" />
+          <e p="20190802172831_Vega.Designer.cs" t="Include" />
+          <e p="20190802173942_features.cs" t="Include" />
+          <e p="20190802173942_features.Designer.cs" t="Include" />
+          <e p="VegaDbContextModelSnapshot.cs" t="Include" />
+        </e>
+        <e p="Models" t="Include">
+          <e p="Features.cs" t="Include" />
+          <e p="Makes.cs" t="Include" />
+          <e p="Models.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -60,6 +39,10 @@
         <e p="Program.cs" t="Include" />
         <e p="Properties" t="Include">
           <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Repository" t="Include">
+          <e p="IVegaRepository.cs" t="Include" />
+          <e p="VegaRepository.cs" t="Include" />
         </e>
         <e p="Startup.cs" t="Include" />
         <e p="Vega.API.csproj" t="IncludeRecursive" />

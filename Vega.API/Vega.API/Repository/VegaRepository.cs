@@ -1,6 +1,7 @@
 using System.Linq;
 using Microsoft.EntityFrameworkCore;
 using Vega.API.DbContext;
+using Vega.API.Models;
 
 namespace Vega.API.Repository
 {
@@ -12,9 +13,9 @@ namespace Vega.API.Repository
         {
             _vegaDbContext = vegaDbContext;
         }
-        public IQueryable<Models.Vega> GetVegaMakes()
+        public IQueryable<Make> GetMakes()
         {
-            return _vegaDbContext.Vega.Include(x => x.Make);
+            return _vegaDbContext.Makes.Include(x => x.Models).Include(x => x.Features);
         }
     }
 }

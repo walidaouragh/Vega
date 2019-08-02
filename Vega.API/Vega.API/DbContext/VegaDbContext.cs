@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using Vega.API.Models;
 
 namespace Vega.API.DbContext
 {
@@ -9,6 +10,6 @@ namespace Vega.API.DbContext
         
         }
         
-        public DbSet<Models.Vega> Vega { get; set; }
+        public DbSet<Make> Makes { get; set; }
     }
 }    
