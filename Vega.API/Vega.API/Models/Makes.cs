@@ -1,4 +1,3 @@
-using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 
@@ -9,12 +8,10 @@ namespace Vega.API.Models
         public int Id { get; set; }
         public string Name { get; set; }
         public ICollection<Model> Models { get; set; }
-        public ICollection<Feature> Features { get; set; }
 
         public Make()
         {
             Models = new Collection<Model>();
-            Features = new Collection<Feature>();
         }
     }
 }

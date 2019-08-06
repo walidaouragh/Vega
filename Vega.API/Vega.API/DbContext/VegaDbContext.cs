@@ -11,5 +11,7 @@ namespace Vega.API.DbContext
         }
         
         public DbSet<Make> Makes { get; set; }
+        
+        public DbSet<Feature> Features { get; set; }
     }
 }    

@@ -5,17 +5,22 @@ using Vega.API.Models;
 
 namespace Vega.API.Repository
 {
-    public class VegaRepository : IVegaRepository
+    public class VehiculeRepository : IVehiculeRepository
     {
         private readonly VegaDbContext _vegaDbContext;
 
-        public VegaRepository(VegaDbContext vegaDbContext)
+        public VehiculeRepository(VegaDbContext vegaDbContext)
         {
             _vegaDbContext = vegaDbContext;
         }
         public IQueryable<Make> GetMakes()
         {
-            return _vegaDbContext.Makes.Include(x => x.Models).Include(x => x.Features);
+            return _vegaDbContext.Makes.Include(x => x.Models);
+        }
+
+        public IQueryable<Feature> GetFeatures()
+        {
+            return _vegaDbContext.Features;
         }
     }
 }

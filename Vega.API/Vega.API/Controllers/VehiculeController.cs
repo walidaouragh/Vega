@@ -1,6 +1,4 @@
 using System.Collections.Generic;
-using System.Linq;
-using System.Security.Claims;
 using System.Threading.Tasks;
 using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
@@ -12,12 +10,12 @@ namespace Vega.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class VegaController : ControllerBase
+    public class VehiculeController : ControllerBase
     {
-        private readonly IVegaRepository _vegaRepository;
+        private readonly IVehiculeRepository _vegaRepository;
         private readonly IMapper _mapper;
 
-        public VegaController(IVegaRepository vegaRepository, IMapper mapper)
+        public VehiculeController(IVehiculeRepository vegaRepository, IMapper mapper)
         {
             _vegaRepository = vegaRepository;
             _mapper = mapper;
@@ -26,12 +24,21 @@ namespace Vega.API.Controllers
         [HttpGet("makes")]
         public async Task<IActionResult> GetMakes()
         {
-            /*var Id = int.Parse(User.FindFirst(ClaimTypes.NameIdentifier).Value);*/
             var makes = await _vegaRepository.GetMakes().ToListAsync();
 
             var makesToReturn = _mapper.Map<IEnumerable<Make>>(makes);
             
             return Ok(makesToReturn);
+        }
+        
+        [HttpGet("features")]
+        public async Task<IActionResult> GetFeatures()
+        {
+            var features = await _vegaRepository.GetFeatures().ToListAsync();
+
+            var featuresToReturn = _mapper.Map<IEnumerable<Feature>>(features);
+            
+            return Ok(featuresToReturn);
         }
     }
 }
