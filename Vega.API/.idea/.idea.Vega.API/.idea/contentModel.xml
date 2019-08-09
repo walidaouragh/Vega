@@ -3,6 +3,92 @@
   <component name="ContentModelStore">
     <e p="C:\Users\waouragh\.Rider2019.1\system\extResources" t="IncludeRecursive" />
     <e p="C:\Users\waouragh\.Rider2019.1\system\resharper-host\local\Transient\ReSharperHost\v191\SolutionCaches\_Vega.API.-1712397412.00" t="ExcludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\@angular\animations" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\@angular\cli" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\@angular\common" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\@angular\compiler" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\@angular\compiler-cli" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\@angular\core" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\@angular\forms" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\@angular\platform-browser" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\@angular\platform-browser-dynamic" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\@angular\router" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\@angular-devkit\build-angular" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\@types" t="IncludeRecursive">
+      <e p="events" t="IncludeRecursive" />
+      <e p="jasmine" t="IncludeRecursive" />
+      <e p="jasminewd2" t="IncludeRecursive" />
+      <e p="minimatch" t="IncludeRecursive" />
+      <e p="node" t="IncludeRecursive" />
+      <e p="source-list-map" t="IncludeRecursive" />
+    </e>
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\bootstrap" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\codelyzer" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\jasmine-core" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\jasmine-spec-reporter" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\karma" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\karma-chrome-launcher" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\karma-coverage-istanbul-reporter" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\karma-jasmine" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\karma-jasmine-html-reporter" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\protractor" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\rxjs" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\source-map" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\ts-node" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\tslib" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\tslint" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\typescript\lib\lib.d.ts" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\typescript\lib\lib.dom.d.ts" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\typescript\lib\lib.dom.iterable.d.ts" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\typescript\lib\lib.es2015.collection.d.ts" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\typescript\lib\lib.es2015.core.d.ts" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\typescript\lib\lib.es2015.d.ts" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\typescript\lib\lib.es2015.generator.d.ts" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\typescript\lib\lib.es2015.iterable.d.ts" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\typescript\lib\lib.es2015.promise.d.ts" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\typescript\lib\lib.es2015.proxy.d.ts" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\typescript\lib\lib.es2015.reflect.d.ts" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\typescript\lib\lib.es2015.symbol.d.ts" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\typescript\lib\lib.es2015.symbol.wellknown.d.ts" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\typescript\lib\lib.es2016.array.include.d.ts" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\typescript\lib\lib.es2016.d.ts" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\typescript\lib\lib.es2016.full.d.ts" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\typescript\lib\lib.es2017.d.ts" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\typescript\lib\lib.es2017.full.d.ts" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\typescript\lib\lib.es2017.intl.d.ts" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\typescript\lib\lib.es2017.object.d.ts" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\typescript\lib\lib.es2017.sharedmemory.d.ts" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\typescript\lib\lib.es2017.string.d.ts" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\typescript\lib\lib.es2017.typedarrays.d.ts" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\typescript\lib\lib.es2018.asynciterable.d.ts" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\typescript\lib\lib.es2018.d.ts" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\typescript\lib\lib.es2018.full.d.ts" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\typescript\lib\lib.es2018.intl.d.ts" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\typescript\lib\lib.es2018.promise.d.ts" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\typescript\lib\lib.es2018.regexp.d.ts" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\typescript\lib\lib.es2019.array.d.ts" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\typescript\lib\lib.es2019.d.ts" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\typescript\lib\lib.es2019.full.d.ts" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\typescript\lib\lib.es2019.object.d.ts" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\typescript\lib\lib.es2019.string.d.ts" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\typescript\lib\lib.es2019.symbol.d.ts" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\typescript\lib\lib.es2020.d.ts" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\typescript\lib\lib.es2020.full.d.ts" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\typescript\lib\lib.es2020.string.d.ts" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\typescript\lib\lib.es2020.symbol.wellknown.d.ts" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\typescript\lib\lib.es5.d.ts" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\typescript\lib\lib.es6.d.ts" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\typescript\lib\lib.esnext.array.d.ts" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\typescript\lib\lib.esnext.asynciterable.d.ts" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\typescript\lib\lib.esnext.bigint.d.ts" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\typescript\lib\lib.esnext.d.ts" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\typescript\lib\lib.esnext.full.d.ts" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\typescript\lib\lib.esnext.intl.d.ts" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\typescript\lib\lib.esnext.symbol.d.ts" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\typescript\lib\lib.scripthost.d.ts" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\typescript\lib\lib.webworker.d.ts" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\typescript\lib\lib.webworker.importscripts.d.ts" t="IncludeRecursive" />
+    <e p="C:\Users\waouragh\Projects\Vega\Vega-Web\Vega-Web\node_modules\zone.js" t="IncludeRecursive" />
     <e p="C:\Users\waouragh\Projects\Vega\Vega.API" t="IncludeFlat">
       <e p="packages" t="ExcludeRecursive" />
       <e p="Vega.API" t="IncludeRecursive">
@@ -11,23 +97,41 @@
         <e p="appsettings.json" t="Include" />
         <e p="bin" t="ExcludeRecursive" />
         <e p="Controllers" t="Include">
+          <e p="Resources" t="Include">
+            <e p="FeatureResource.cs" t="Include" />
+            <e p="MakeResource.cs" t="Include" />
+            <e p="ModelResource.cs" t="Include" />
+          </e>
           <e p="ValuesController.cs" t="Include" />
-          <e p="VegaController.cs" t="Include" />
+          <e p="VehicleController.cs" t="Include" />
         </e>
         <e p="DbContext" t="Include">
           <e p="VegaDbContext.cs" t="Include" />
+        </e>
+        <e p="Mapping" t="Include">
+          <e p="MappingProfile.cs" t="Include" />
         </e>
         <e p="Migrations" t="Include">
           <e p="20190802172831_Vega.cs" t="Include" />
           <e p="20190802172831_Vega.Designer.cs" t="Include" />
           <e p="20190802173942_features.cs" t="Include" />
           <e p="20190802173942_features.Designer.cs" t="Include" />
+          <e p="20190806162115_removeFeatures.cs" t="Include" />
+          <e p="20190806162115_removeFeatures.Designer.cs" t="Include" />
+          <e p="20190806163756_addFeatures.cs" t="Include" />
+          <e p="20190806163756_addFeatures.Designer.cs" t="Include" />
+          <e p="20190807203114_Vehicle.cs" t="Include" />
+          <e p="20190807203114_Vehicle.Designer.cs" t="Include" />
           <e p="VegaDbContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="Models" t="Include">
+          <e p="ContactResource.cs" t="Include" />
           <e p="Features.cs" t="Include" />
           <e p="Makes.cs" t="Include" />
           <e p="Models.cs" t="Include" />
+          <e p="Vehicle.cs" t="Include" />
+          <e p="VehicleFeature.cs" t="Include" />
+          <e p="Vehicleresource.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -41,8 +145,8 @@
           <e p="launchSettings.json" t="Include" />
         </e>
         <e p="Repository" t="Include">
-          <e p="IVegaRepository.cs" t="Include" />
-          <e p="VegaRepository.cs" t="Include" />
+          <e p="IVehicleRepository.cs" t="Include" />
+          <e p="VehicleRepository.cs" t="Include" />
         </e>
         <e p="Startup.cs" t="Include" />
         <e p="Vega.API.csproj" t="IncludeRecursive" />

@@ -1,31 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="93f59bd4-53d9-4780-bf6a-0973d688c864" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Vega.dir/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Vega.dir/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Vega.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Vega.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vega-Web" beforeDir="false" afterPath="$PROJECT_DIR$/Vega-Web" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vega-Web/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Vega-Web/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vega-Web/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Vega-Web/src/app/app.component.ts" afterDir="false" />
+    <list default="true" id="93f59bd4-53d9-4780-bf6a-0973d688c864" name="Default Changelist" comment="add HttpClientModule">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Vega.dir/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Vega.dir/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Vega.API/.idea/.idea.Vega.API/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Vega.API/.idea/.idea.Vega.API/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Vega.API/.idea/.idea.Vega.API/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Vega.API/.idea/.idea.Vega.API/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vega.API/Vega.API/.idea/.idea.Vega.API.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Vega.API/Vega.API/.idea/.idea.Vega.API.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vega.API/Vega.API/Controllers/ValuesController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Vega.API/Vega.API/Controllers/ValuesController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vega.API/Vega.API/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Vega.API/Vega.API/Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vega.API/Vega.API/Vega.API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Vega.API/Vega.API/Vega.API.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vega.API/Vega.API/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Vega.API/Vega.API/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vega.API/Vega.API/bin/Debug/netcoreapp2.2/Vega.API.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Vega.API/Vega.API/bin/Debug/netcoreapp2.2/Vega.API.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vega.API/Vega.API/Controllers/VehiculeController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Vega.API/Vega.API/Controllers/VehiculeController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Vega.API/Vega.API/bin/Debug/netcoreapp2.2/Vega.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Vega.API/Vega.API/bin/Debug/netcoreapp2.2/Vega.API.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Vega.API/Vega.API/bin/Debug/netcoreapp2.2/Vega.API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Vega.API/Vega.API/bin/Debug/netcoreapp2.2/Vega.API.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vega.API/Vega.API/obj/Debug/netcoreapp2.2/Vega.API.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Vega.API/Vega.API/obj/Debug/netcoreapp2.2/Vega.API.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Vega.API/Vega.API/obj/Debug/netcoreapp2.2/Vega.API.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Vega.API/Vega.API/obj/Debug/netcoreapp2.2/Vega.API.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vega.API/Vega.API/obj/Debug/netcoreapp2.2/Vega.API.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Vega.API/Vega.API/obj/Debug/netcoreapp2.2/Vega.API.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Vega.API/Vega.API/obj/Debug/netcoreapp2.2/Vega.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Vega.API/Vega.API/obj/Debug/netcoreapp2.2/Vega.API.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Vega.API/Vega.API/obj/Debug/netcoreapp2.2/Vega.API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Vega.API/Vega.API/obj/Debug/netcoreapp2.2/Vega.API.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vega.API/Vega.API/obj/Vega.API.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Vega.API/Vega.API/obj/Vega.API.csproj.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vega.API/Vega.API/obj/Vega.API.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Vega.API/Vega.API/obj/Vega.API.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vega.API/Vega.API/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Vega.API/Vega.API/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vega.API/Vega.API/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Vega.API/Vega.API/obj/project.packagespec.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -36,45 +21,41 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Vega-Web/src/app/app.component.ts">
+        <entry file="file://$PROJECT_DIR$/Vega.API/Vega.API/DbContext/VegaDbContext.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="15">
+              <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Vega.API/Vega.API/Models/Vehicule.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
               <folding>
-                <element signature="e#0#48#0" expanded="true" />
+                <marker date="1565208387571" expanded="true" signature="25:232" ph="{...}" />
+                <marker date="1565208387571" expanded="true" signature="53:230" ph="{...}" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Vega.API/Vega.API/Models/Models.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Vega.API/Vega.API/DbContext/VegaDbContext.cs">
+        <entry file="file://$PROJECT_DIR$/Vega.API/Vega.API/Models/Makes.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-              <folding>
-                <marker date="1564515774402" expanded="true" signature="66:262" ph="{...}" />
-                <marker date="1564515774402" expanded="true" signature="141:260" ph="{...}" />
-                <marker date="1564515774402" expanded="true" signature="233:254" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Vega.API/Vega.API/Controllers/ValuesController.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="4" column="31" lean-forward="true" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Vega.API/Vega.API/Startup.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+            <state relative-caret-position="120">
+              <caret line="9" column="37" lean-forward="true" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -85,9 +66,13 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Vega.API/Vega.API/Models/Models.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Vega.API/Vega.API/Models/Makes.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Vega.API/Vega.API/DbContext/VegaDbContext.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Vega.API/Vega.API/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Vega.API/Vega.API/Controllers/VehiculeController.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Vega.API/Vega.API/Controllers/ValuesController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Vega.API/Vega.API/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Vega.API/Vega.API/Models/Vehicule.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -99,6 +84,9 @@
         <option value="$PROJECT_DIR$/Vega.API/Vega.API/Controllers/ValuesController.cs" />
         <option value="$PROJECT_DIR$/Vega-Web/src/environments/environment.ts" />
         <option value="$PROJECT_DIR$/Vega.API/Vega.API/DbContext/VegaDbContext.cs" />
+        <option value="$PROJECT_DIR$/Vega-Web/vega-web/src/app/services/vehicule-service.ts" />
+        <option value="$PROJECT_DIR$/Vega-Web/vega-web/src/app/vehicule-form/vehicule-form.component.html" />
+        <option value="$PROJECT_DIR$/Vega.API/Vega.API/Models/Vehicule.cs" />
       </list>
     </option>
   </component>
@@ -114,6 +102,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="AssemblyExplorer" />
       <pane id="FileSystemExplorer">
         <subPane>
           <expand>
@@ -124,6 +113,11 @@
             <path>
               <item name="" type="161ac34:FileSystemExplorerRootNode" />
               <item name="Vega" type="34e6ba20:FileSystemExplorerNode" />
+              <item name="Vega-Web" type="34e6ba20:FileSystemExplorerNode" />
+            </path>
+            <path>
+              <item name="" type="161ac34:FileSystemExplorerRootNode" />
+              <item name="Vega" type="34e6ba20:FileSystemExplorerNode" />
               <item name="Vega.API" type="34e6ba20:FileSystemExplorerNode" />
             </path>
             <path>
@@ -137,13 +131,12 @@
               <item name="Vega" type="34e6ba20:FileSystemExplorerNode" />
               <item name="Vega.API" type="34e6ba20:FileSystemExplorerNode" />
               <item name="Vega.API" type="34e6ba20:FileSystemExplorerNode" />
-              <item name="DbContext" type="34e6ba20:FileSystemExplorerNode" />
+              <item name="Models" type="34e6ba20:FileSystemExplorerNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="AssemblyExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -153,7 +146,7 @@
     <property name="editor.config.ad.shown" value="true" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="ts.external.directory.path" value="C:\Users\waouragh\Projects\Vega\Vega-Web\node_modules\typescript\lib" />
+    <property name="ts.external.directory.path" value="C:\Users\waouragh\Projects\Vega\Vega-Web\vega-web\node_modules\typescript\lib" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -181,6 +174,7 @@
       <workItem from="1564171644983" duration="1046000" />
       <workItem from="1564431424581" duration="282000" />
       <workItem from="1564518018131" duration="550000" />
+      <workItem from="1565207660789" duration="743000" />
     </task>
     <task id="LOCAL-00001" summary="add HttpClientModule">
       <created>1564431554787</created>
@@ -193,7 +187,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2645000" />
+    <option name="totallyTimeSpent" value="3388000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -208,7 +202,7 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14384656" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21470432" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -224,7 +218,7 @@
       <window_info anchor="bottom" id="Database Changes" order="10" />
       <window_info anchor="bottom" id="TypeScript" order="11" />
       <window_info anchor="bottom" id="Unit Tests" order="12" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="13" visible="true" weight="0.24332978" />
+      <window_info anchor="bottom" id="Terminal" order="13" weight="0.24332978" />
       <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -256,66 +250,70 @@
     <entry file="file://$PROJECT_DIR$/Vega.API/Vega.API.sln">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Vega-Web/src/environments/environment.ts">
+    <entry file="file://$PROJECT_DIR$/Vega-Web/src/environments/environment.ts" />
+    <entry file="file://$PROJECT_DIR$/Vega-Web/src/app/app.module.ts" />
+    <entry file="file://$PROJECT_DIR$/Vega-Web/src/app/app.component.ts" />
+    <entry file="file://$PROJECT_DIR$/Vega-Web/src/app/app.component.html" />
+    <entry file="file://$PROJECT_DIR$/Vega.API/Vega.API/Startup.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vega-Web/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="e#0#58#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vega-Web/src/app/app.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#0#48#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Vega-Web/src/app/app.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        <state relative-caret-position="331">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Vega.API/Vega.API/Controllers/ValuesController.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret line="4" column="31" lean-forward="true" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Vega.API/Vega.API/Startup.cs">
+    <entry file="file://$PROJECT_DIR$/Vega-Web/vega-web/src/app/vehicule-form/vehicule-form.component.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="541">
+          <caret line="49" column="47" lean-forward="true" selection-start-line="49" selection-start-column="47" selection-end-line="49" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vega-Web/vega-web/src/app/services/vehicule-service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#0#43#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Vega.API/Vega.API/DbContext/VegaDbContext.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="5" lean-forward="true" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
+        <state relative-caret-position="15">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vega.API/Vega.API/Models/Vehicule.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="1" lean-forward="true" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
           <folding>
-            <marker date="1564515774402" expanded="true" signature="66:262" ph="{...}" />
-            <marker date="1564515774402" expanded="true" signature="141:260" ph="{...}" />
-            <marker date="1564515774402" expanded="true" signature="233:254" ph="{...}" />
+            <marker date="1565208387571" expanded="true" signature="25:232" ph="{...}" />
+            <marker date="1565208387571" expanded="true" signature="53:230" ph="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vega.API/Vega.API/Models/Models.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Vega.API/Vega.API/Models/Makes.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="9" column="37" lean-forward="true" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
         </state>
       </provider>
     </entry>

@@ -1,0 +1,52 @@
+<button class="btn-success" (click)="toNavigate()">Navigate Back</button>
+<h1>New Vehicule</h1>
+<form>
+  <div class="form-group">
+    <label for="make">Make</label>
+    <select class="form-control" id="make" (change)="onMakeChange()" [(ngModel)]="vehicule.make" name="make">
+      <option value=""></option>
+      <option *ngFor="let make of makes" [value]="make.id">{{ make.name }}</option>
+    </select>
+  </div>
+  <div class="form-group">
+    <label for="model">Model</label>
+    <select class="form-control" id="model">
+      <option value=""></option>
+      <option  *ngFor="let model of models" [value]="model.id">{{model.name}}</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <p>Is this vehicle registered?</p>
+    <div class="custom-control custom-radio">
+      <input type="radio" class="custom-control-input" id="registered" name="registered" checked>
+      <label class="custom-control-label" for="registered">Yes</label>
+    </div>
+
+    <div class="custom-control custom-radio">
+      <input type="radio" class="custom-control-input" id="notRegistered" name="registered">
+      <label class="custom-control-label" for="notRegistered">No</label>
+    </div>
+  </div>
+
+  <h2>Features</h2>
+  <div class="form-check" *ngFor="let feature of features">
+    <input type="checkbox" class="form-check-input" id="feature">
+    <label class="form-check-label" for="feature">{{feature.name}}</label>
+  </div>
+
+  <div class="form-group">
+    <h5>Contact Name</h5>
+    <input type="text" class="form-control" id="contactName" placeholder="Contact Name">
+  </div>
+  <div class="form-group">
+    <h5>Contact Phone</h5>
+    <input type="phone" class="form-control" id="contactNumber" placeholder="Contact Phone">
+  </div>
+
+  <div class="form-group">
+    <h5>Contact Phone</h5>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+  </div>
+  <button class="btn btn-primary">Save</button>
+</form>

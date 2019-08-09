@@ -3,7 +3,7 @@ using Vega.API.Models;
 
 namespace Vega.API.Repository
 {
-    public interface IVehiculeRepository
+    public interface IVehicleRepository
     {
         IQueryable<Make> GetMakes();
         IQueryable<Feature> GetFeatures();

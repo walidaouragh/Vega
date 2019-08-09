@@ -26,7 +26,7 @@ namespace Vega.API
                 option.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             services.AddCors();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-            services.AddScoped<IVehiculeRepository, VehiculeRepository>();
+            services.AddScoped<IVehicleRepository, VehicleRepository>();
             services.AddAutoMapper();
         }
 

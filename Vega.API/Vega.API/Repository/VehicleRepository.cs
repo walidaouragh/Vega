@@ -5,11 +5,11 @@ using Vega.API.Models;
 
 namespace Vega.API.Repository
 {
-    public class VehiculeRepository : IVehiculeRepository
+    public class VehicleRepository : IVehicleRepository
     {
         private readonly VegaDbContext _vegaDbContext;
 
-        public VehiculeRepository(VegaDbContext vegaDbContext)
+        public VehicleRepository(VegaDbContext vegaDbContext)
         {
             _vegaDbContext = vegaDbContext;
         }
