@@ -1,0 +1,40 @@
+<h1>Details</h1>
+<h2>Car</h2>
+<hr />
+<div class="row" *ngIf="vehicle">
+    <div class="col-md-6">
+        <h4>Photo</h4>
+    </div>
+    <div class="col-md-6 mb-2">
+        <img src="{{ vehicle.photo || '../../../assets/user.png' }}" width="100px" />
+    </div>
+    <div class="col-md-6">
+        <h4>Brand</h4>
+    </div>
+    <div class="col-md-6">
+        {{ vehicle.brand }}
+    </div>
+    <div class="col-md-6">
+        <h4>Model</h4>
+    </div>
+    <div class="col-md-6">
+        {{ vehicle.model }}
+    </div>
+    <div class="col-md-6">
+        <h4>Year</h4>
+    </div>
+    <div class="col-md-6">
+        {{ vehicle.year }}
+    </div>
+    <div class="col-md-6">
+        <h4>Price($)</h4>
+    </div>
+    <div class="col-md-6">
+        {{ vehicle.price }}
+    </div>
+</div>
+<hr />
+<h4>Contact</h4>
+<div class="mt-5">
+    <a class="mr-1" [routerLink]="['/edit', vehicleId]">Edit</a>|<a class="ml-1" [routerLink]="['/']">Back to list</a>
+</div>

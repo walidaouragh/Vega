@@ -1,0 +1,11 @@
+a {
+  color: #0060B6 !important;
+  text-decoration: none;
+}
+
+a:hover
+{
+  color:#00A0C6 !important;
+  text-decoration:none;
+  cursor:pointer;
+}
