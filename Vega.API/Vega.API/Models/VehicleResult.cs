@@ -1,10 +1,9 @@
 using System;
-using System.ComponentModel.DataAnnotations.Schema;
+using System.Collections.Generic;
 
 namespace Vega.API.Models
 {
-    [Table("Vehicles")]
-    public class Vehicle
+    public class VehicleResult
     {
         public int VehicleId { get; set; }
         public string Photo { get; set; }

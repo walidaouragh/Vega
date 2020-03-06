@@ -27,11 +27,11 @@ namespace Vega.API
             services.AddCors();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             services.AddScoped<IVehicleRepository, VehicleRepository>();
-            services.AddAutoMapper();
+            services.AddAutoMapper(typeof(Startup));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, VegaDbContext context)
         {
             if (env.IsDevelopment())
             {
@@ -43,6 +43,7 @@ namespace Vega.API
                 app.UseHsts();
             }
 
+            Seed.SeedDatabase(context);
             app.UseCors(x => x.AllowAnyMethod().AllowAnyHeader().WithOrigins("http://localhost:4200"));
             app.UseHttpsRedirection();
             app.UseMvc();

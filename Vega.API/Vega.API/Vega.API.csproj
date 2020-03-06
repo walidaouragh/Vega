@@ -16,4 +16,8 @@
       <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.2.6" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Compile Remove="Controllers\Resources\ModelResource.cs" />
+    </ItemGroup>
+
 </Project>

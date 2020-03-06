@@ -1,0 +1,27 @@
+<h1>Car Gallery</h1>
+<p>
+  <a>Add New Car</a>
+</p>
+<table class="table">
+  <thead>
+  <tr>
+    <th scope="col">Photo</th>
+    <th scope="col">Brand</th>
+    <th scope="col">Model</th>
+    <th scope="col">Year</th>
+    <th scope="col">Price($)</th>
+    <th scope="col"></th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let v of vehicle">
+    <!--<th scope="row"><img src="https://{{ v.photo }}" alt="[Image Missing]" width="100px" /></th>-->
+    <th scope="row"><img src="{{ v.photo || '../../../assets/user.png' }}"  width="100px"/></th>
+    <td>{{v.brand}}</td>
+    <td>{{v.model}}</td>
+    <td>{{v.year}}</td>
+    <td>{{v.price}}</td>
+    <td><a>Edit</a>|<a>Details</a>|<a>Delete</a></td>
+  </tr>
+  </tbody>
+</table>
