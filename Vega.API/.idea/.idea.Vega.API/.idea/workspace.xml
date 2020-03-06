@@ -2,108 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3bbd5519-1d52-45d1-8e62-2b3d154dbfbf" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Vega.API/DbContext/Seed.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vega.API/Models/VehicleResult.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vega.API/Models/VehicleToUpdate.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Vega.API/Models/vehicleToPost.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/.idea.Vega.dir/.idea/contentModel.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/.idea.Vega.dir/.idea/indexLayout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/.idea.Vega.dir/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/.idea.Vega.dir/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/.idea.Vega.dir/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/.idea.Vega.dir/riderModule.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Vega-Web/vega-web/.editorconfig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Vega-Web/vega-web/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Vega-Web/vega-web/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Vega-Web/vega-web/angular.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Vega-Web/vega-web/browserslist" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Vega-Web/vega-web/e2e/protractor.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Vega-Web/vega-web/e2e/src/app.e2e-spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Vega-Web/vega-web/e2e/src/app.po.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Vega-Web/vega-web/e2e/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Vega-Web/vega-web/karma.conf.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Vega-Web/vega-web/package-lock.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Vega-Web/vega-web/package.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Vega-Web/vega-web/src/app/app-routing.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Vega-Web/vega-web/src/app/app.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Vega-Web/vega-web/src/app/app.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Vega-Web/vega-web/src/app/app.component.spec.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Vega-Web/vega-web/src/app/app.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Vega-Web/vega-web/src/app/app.module.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Vega-Web/vega-web/src/app/home/home.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Vega-Web/vega-web/src/app/home/home.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Vega-Web/vega-web/src/app/home/home.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Vega-Web/vega-web/src/app/services/vehicule-service.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Vega-Web/vega-web/src/app/vehicle-form/vehicle-form.component.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Vega-Web/vega-web/src/app/vehicle-form/vehicle-form.component.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Vega-Web/vega-web/src/app/vehicle-form/vehicle-form.component.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Vega-Web/vega-web/src/assets/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Vega-Web/vega-web/src/environments/environment.prod.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Vega-Web/vega-web/src/environments/environment.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Vega-Web/vega-web/src/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Vega-Web/vega-web/src/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Vega-Web/vega-web/src/main.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Vega-Web/vega-web/src/polyfills.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Vega-Web/vega-web/src/styles.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Vega-Web/vega-web/src/test.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Vega-Web/vega-web/tsconfig.app.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Vega-Web/vega-web/tsconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Vega-Web/vega-web/tsconfig.spec.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Vega-Web/vega-web/tslint.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Vega.API.dir/.idea/contentModel.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Vega.API.dir/.idea/indexLayout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Vega.API.dir/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Vega.API.dir/.idea/workspace.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Vega.API.dir/riderModule.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Vega.API/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Vega.API/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Vega.API/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Vega.API/.idea/indexLayout.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Vega.API/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Vega.API/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Vega.API/riderModule.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Vega.API/riderModule.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vega.API/.idea/.idea.Vega.API.dir/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Vega.API/.idea/.idea.Vega.API.dir/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vega.API/.idea/.idea.Vega.API.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Vega.API/.idea/.idea.Vega.API.dir/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vega.API/Controllers/Resources/FeatureResource.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vega.API/Controllers/Resources/MakeResource.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vega.API/Controllers/Resources/ModelResource.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vega.API/Controllers/ValuesController.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vega.API/Controllers/VehicleController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Vega.API/Controllers/VehicleController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vega.API/DbContext/VegaDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Vega.API/DbContext/VegaDbContext.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vega.API/Mapping/MappingProfile.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Vega.API/Mapping/MappingProfile.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vega.API/Migrations/20190802172831_Vega.Designer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vega.API/Migrations/20190802172831_Vega.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vega.API/Migrations/20190802173942_features.Designer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vega.API/Migrations/20190802173942_features.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vega.API/Migrations/20190806162115_removeFeatures.Designer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vega.API/Migrations/20190806162115_removeFeatures.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vega.API/Migrations/20190806163756_addFeatures.Designer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vega.API/Migrations/20190806163756_addFeatures.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vega.API/Migrations/20190807203114_Vehicle.Designer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vega.API/Migrations/20190807203114_Vehicle.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vega.API/Migrations/VegaDbContextModelSnapshot.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vega.API/Models/ContactResource.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Vega.API/Models/Contact.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vega.API/Models/Features.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Vega.API/Models/Feature.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vega.API/Models/Makes.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vega.API/Models/Models.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vega.API/Models/Vehicle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Vega.API/Models/Vehicle.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vega.API/Models/VehicleFeature.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vega.API/Models/VehicleResource.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vega.API/Repository/IVehicleRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Vega.API/Repository/IVehicleRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vega.API/Repository/VehicleRepository.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Vega.API/Repository/VehicleRepository.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vega.API/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Vega.API/Startup.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vega.API/Vega.API.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Vega.API/Vega.API.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vega.API/bin/Debug/netcoreapp2.2/Vega.API.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Vega.API/bin/Debug/netcoreapp2.2/Vega.API.deps.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vega.API/bin/Debug/netcoreapp2.2/Vega.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Vega.API/bin/Debug/netcoreapp2.2/Vega.API.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vega.API/bin/Debug/netcoreapp2.2/Vega.API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Vega.API/bin/Debug/netcoreapp2.2/Vega.API.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vega.API/obj/Debug/netcoreapp2.2/Vega.API.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Vega.API/obj/Debug/netcoreapp2.2/Vega.API.assets.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vega.API/obj/Debug/netcoreapp2.2/Vega.API.csproj.CoreCompileInputs.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vega.API/obj/Debug/netcoreapp2.2/Vega.API.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Vega.API/obj/Debug/netcoreapp2.2/Vega.API.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vega.API/obj/Debug/netcoreapp2.2/Vega.API.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Vega.API/obj/Debug/netcoreapp2.2/Vega.API.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vega.API/obj/Debug/netcoreapp2.2/Vega.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Vega.API/obj/Debug/netcoreapp2.2/Vega.API.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vega.API/obj/Debug/netcoreapp2.2/Vega.API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Vega.API/obj/Debug/netcoreapp2.2/Vega.API.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vega.API/obj/Vega.API.csproj.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Vega.API/obj/Vega.API.csproj.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vega.API/obj/Vega.API.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Vega.API/obj/Vega.API.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vega.API/obj/Vega.API.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Vega.API/obj/Vega.API.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vega.API/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Vega.API/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Vega.API/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Vega.API/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Vega-Web/src/app/_services/vehicle-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Vega-Web/src/app/_services/vehicle-service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Vega-Web/src/app/_types/IFeature.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Vega-Web/src/app/_types/IFeature.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Vega-Web/src/app/_types/IVehicle.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Vega-Web/src/app/_types/IVehicle.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Vega-Web/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Vega-Web/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Vega-Web/src/app/app.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Vega-Web/src/app/app.component.spec.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Vega-Web/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Vega-Web/src/app/app.component.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -123,6 +27,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Vega.API/DbContext/VegaDbContext.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../vega-web/.editorconfig" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Vega.API/Models/Feature.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Vega.API/Models/Vehicle.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Vega.API/Models/vehicleToPost.cs" root0="FORCE_HIGHLIGHTING" />
@@ -147,7 +52,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Vega.API/Controllers/VegaController.cs" />
         <option value="$PROJECT_DIR$/Vega.API/Models/Featues.cs" />
         <option value="$PROJECT_DIR$/../Vega-Web/vega-web/angular.json" />
         <option value="$PROJECT_DIR$/Vega.API/Repository/VegaRepository.cs" />
@@ -198,6 +102,7 @@
         <option value="$PROJECT_DIR$/Vega.API/Repository/IVehicleRepository.cs" />
         <option value="$PROJECT_DIR$/Vega.API/Repository/VehicleRepository.cs" />
         <option value="$PROJECT_DIR$/Vega.API/Controllers/VehicleController.cs" />
+        <option value="$PROJECT_DIR$/Vega.API/.gitignore" />
       </list>
     </option>
   </component>
@@ -293,7 +198,7 @@
       <workItem from="1583332504074" duration="27418000" />
       <workItem from="1583437953820" duration="6855000" />
       <workItem from="1583509759207" duration="228000" />
-      <workItem from="1583510298533" duration="953000" />
+      <workItem from="1583510298533" duration="1833000" />
     </task>
     <task id="LOCAL-00001" summary="Rename models and add Features">
       <created>1564767776241</created>
@@ -316,16 +221,18 @@
       <option name="project" value="LOCAL" />
       <updated>1565366955775</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Refactor">
+      <created>1583511633930</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1583511633930</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
-    <option name="exactExcludedFiles">
-      <list>
-        <option value="$PROJECT_DIR$/../Vega-Web/vega-web/node_modules/karma/config.tpl.js" />
-      </list>
-    </option>
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
@@ -348,7 +255,8 @@
     <MESSAGE value="rename models and add feature as a separate method" />
     <MESSAGE value="add UI project first changes" />
     <MESSAGE value="add UI" />
-    <option name="LAST_COMMIT_MESSAGE" value="add UI" />
+    <MESSAGE value="Refactor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor" />
   </component>
   <component name="WindowStateProjectService">
     <state width="720" height="560" key="Git.Branch.Popup" />
