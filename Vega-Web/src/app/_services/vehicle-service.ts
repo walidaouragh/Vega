@@ -16,16 +16,16 @@ export class VehicleService {
         return this.http.get(`http://localhost:5000/api/vehicle/${vehicleId}`);
     }
 
-    public addVehicle(payload: any): Observable<any> {
+    public createVehicle(payload: any): Observable<any> {
         return this.http.post('http://localhost:5000/api/vehicle', payload);
     }
 
-    public updateVehicle(payload: any): Observable<any> {
-        return this.http.put('http://localhost:5000/api/vehicle', payload);
+    public updateVehicle(vehicleId: number, payload: any): Observable<any> {
+        return this.http.put(`http://localhost:5000/api/vehicle/${vehicleId}`, payload);
     }
 
     public DeleteVehicle(vehicleId: number): Observable<any> {
-        return this.http.delete(`http://localhost:5000/api/vehicle/vehicles/${vehicleId}`);
+        return this.http.delete(`http://localhost:5000/api/vehicle/${vehicleId}`);
     }
 
     public getFeatures(): Observable<any> {

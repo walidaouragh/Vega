@@ -2,12 +2,30 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3bbd5519-1d52-45d1-8e62-2b3d154dbfbf" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/../Vega-Web/src/app/_pipes/phonePipe.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Vega-Web/src/app/edit/edit.component.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Vega-Web/src/app/edit/edit.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Vega-Web/src/app/edit/edit.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Vega-Web/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../Vega-Web/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Vega-Web/angular.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Vega-Web/angular.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Vega-Web/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Vega-Web/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Vega-Web/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/../Vega-Web/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Vega-Web/src/app/_services/vehicle-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Vega-Web/src/app/_services/vehicle-service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Vega-Web/src/app/_types/IFeature.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Vega-Web/src/app/_types/IFeature.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Vega-Web/src/app/_types/IVehicle.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Vega-Web/src/app/_types/IVehicle.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Vega-Web/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Vega-Web/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Vega-Web/src/app/app.component.spec.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Vega-Web/src/app/app.component.spec.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Vega-Web/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Vega-Web/src/app/app.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Vega-Web/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Vega-Web/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Vega-Web/src/app/detail/detail.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Vega-Web/src/app/detail/detail.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Vega-Web/src/app/detail/detail.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Vega-Web/src/app/detail/detail.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Vega-Web/src/app/home/home.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Vega-Web/src/app/home/home.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Vega-Web/src/app/home/home.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/../Vega-Web/src/app/home/home.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Vega.API/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Vega.API/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vega.API/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Vega.API/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vega.API/Controllers/VehicleController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Vega.API/Controllers/VehicleController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vega.API/Models/Vehicle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Vega.API/Models/Vehicle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vega.API/Models/VehicleToUpdate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Vega.API/Models/VehicleToUpdate.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vega.API/bin/Debug/netcoreapp2.2/Vega.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Vega.API/bin/Debug/netcoreapp2.2/Vega.API.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vega.API/bin/Debug/netcoreapp2.2/Vega.API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Vega.API/bin/Debug/netcoreapp2.2/Vega.API.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vega.API/obj/Debug/netcoreapp2.2/Vega.API.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Vega.API/obj/Debug/netcoreapp2.2/Vega.API.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Vega.API/obj/Debug/netcoreapp2.2/Vega.API.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Vega.API/obj/Debug/netcoreapp2.2/Vega.API.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vega-web/src/app/home/home.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/../vega-web/src/app/home/home.component.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -95,14 +113,14 @@
         <option value="$PROJECT_DIR$/Vega.API/Mapping/MappingProfile.cs" />
         <option value="$PROJECT_DIR$/Vega.API/Models/Contact.cs" />
         <option value="$PROJECT_DIR$/Vega.API/DbContext/Seed.cs" />
-        <option value="$PROJECT_DIR$/Vega.API/Models/Vehicle.cs" />
         <option value="$PROJECT_DIR$/Vega.API/Models/vehicleToPost.cs" />
-        <option value="$PROJECT_DIR$/Vega.API/Models/VehicleToUpdate.cs" />
         <option value="$PROJECT_DIR$/Vega.API/Models/VehicleResult.cs" />
-        <option value="$PROJECT_DIR$/Vega.API/Repository/IVehicleRepository.cs" />
-        <option value="$PROJECT_DIR$/Vega.API/Repository/VehicleRepository.cs" />
-        <option value="$PROJECT_DIR$/Vega.API/Controllers/VehicleController.cs" />
         <option value="$PROJECT_DIR$/Vega.API/.gitignore" />
+        <option value="$PROJECT_DIR$/Vega.API/Repository/VehicleRepository.cs" />
+        <option value="$PROJECT_DIR$/Vega.API/Repository/IVehicleRepository.cs" />
+        <option value="$PROJECT_DIR$/Vega.API/Models/Vehicle.cs" />
+        <option value="$PROJECT_DIR$/Vega.API/Models/VehicleToUpdate.cs" />
+        <option value="$PROJECT_DIR$/Vega.API/Controllers/VehicleController.cs" />
       </list>
     </option>
   </component>
@@ -198,7 +216,7 @@
       <workItem from="1583332504074" duration="27418000" />
       <workItem from="1583437953820" duration="6855000" />
       <workItem from="1583509759207" duration="228000" />
-      <workItem from="1583510298533" duration="1833000" />
+      <workItem from="1583510298533" duration="13029000" />
     </task>
     <task id="LOCAL-00001" summary="Rename models and add Features">
       <created>1564767776241</created>
@@ -228,7 +246,14 @@
       <option name="project" value="LOCAL" />
       <updated>1583511633930</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="prettier again">
+      <created>1583523928009</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1583523928009</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -256,7 +281,8 @@
     <MESSAGE value="add UI project first changes" />
     <MESSAGE value="add UI" />
     <MESSAGE value="Refactor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor" />
+    <MESSAGE value="prettier again" />
+    <option name="LAST_COMMIT_MESSAGE" value="prettier again" />
   </component>
   <component name="WindowStateProjectService">
     <state width="720" height="560" key="Git.Branch.Popup" />
@@ -270,6 +296,19 @@
           <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Vega.API/Controllers/VehicleController.cs</url>
+          <line>165</line>
+          <properties documentPath="$PROJECT_DIR$/Vega.API/Controllers/VehicleController.cs" initialLine="155">
+            <startOffsets>
+              <option value="5293" />
+            </startOffsets>
+            <endOffsets>
+              <option value="5545" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

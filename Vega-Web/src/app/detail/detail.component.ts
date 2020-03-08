@@ -22,7 +22,6 @@ export class DetailComponent implements OnInit {
     public getVehicle(vehicleId: number): void {
         this.vService.getVehicle(vehicleId).subscribe((vehicle: IVehicle) => {
             this.vehicle = vehicle;
-            console.log(this.vehicle);
         });
     }
 }

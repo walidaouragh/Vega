@@ -80,6 +80,14 @@ namespace Vega.API.Controllers
                  throw new ArgumentNullException(nameof(vehicleToUpdate));
              }
 
+             if (string.IsNullOrEmpty(vehicleToUpdate.Brand) ||
+                 string.IsNullOrEmpty(vehicleToUpdate.Model) ||
+                 string.IsNullOrEmpty(vehicleToUpdate.Contact.ContactName)
+             )
+             {
+                 return Conflict($"missing required field");
+             }
+
              await UpdateVehicle(existingVehicle, vehicleToUpdate);
 
              return Ok();
@@ -89,10 +97,12 @@ namespace Vega.API.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateVehicle([FromBody] Vehicle vehicle)
         {
-            var vehicleExist = await _vegaRepository.GetVehicle(vehicle.VehicleId).FirstOrDefaultAsync();
-            if (vehicleExist != null)
+            if (string.IsNullOrEmpty(vehicle.Brand) ||
+                string.IsNullOrEmpty(vehicle.Model) ||
+                string.IsNullOrEmpty(vehicle.Contact.ContactName)
+            )
             {
-                 return Conflict($"This vehicle '{vehicle.Brand}' already exists");
+                return Conflict($"missing required field");
             }
 
             var result = new Vehicle()

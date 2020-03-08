@@ -1,0 +1,92 @@
+<h1>Edit</h1>
+<h2>Car</h2>
+<hr />
+<form *ngIf="vehicle" [formGroup]="form" (ngSubmit)="updateVehicle(form)">
+    <alert type="danger" *ngIf="errorMessage">{{ errorMessage }}</alert>
+    <accordion>
+        <accordion-group heading="Contact" class="mb-3" formGroupName="contact">
+            <div class="mb-3">
+                <label>Name</label>
+                <input type="text" class="form-control" formControlName="contactName" />
+                <span
+                    *ngIf="
+                        isSubmitted &&
+                        form
+                            .get('contact')
+                            .get('contactName')
+                            .hasError('required')
+                    "
+                    style="color: red"
+                    >Name is required</span
+                >
+            </div>
+            <div class="mb-3">
+                <label>Email</label>
+                <input type="text" class="form-control" formControlName="contactEmail" />
+                <span
+                    *ngIf="
+                        isSubmitted &&
+                        form
+                            .get('contact')
+                            .get('contactEmail')
+                            .hasError('required')
+                    "
+                    style="color: red"
+                    >Email is required</span
+                >
+            </div>
+
+            <div class="mb-3">
+                <label>Phone</label>
+                <input type="text" class="form-control" formControlName="contactPhone" />
+                <span
+                    *ngIf="
+                        isSubmitted &&
+                        form
+                            .get('contact')
+                            .get('contactPhone')
+                            .hasError('required')
+                    "
+                    style="color: red"
+                    >Phone is required</span
+                >
+            </div>
+        </accordion-group>
+    </accordion>
+    <div>
+        <div class="mb-3">
+            <label>Brand</label>
+            <input type="text" class="form-control" formControlName="brand" />
+            <span *ngIf="isSubmitted && form.get('brand').hasError('required')" style="color: red"
+                >Brand is required</span
+            >
+        </div>
+        <div class="mb-3">
+            <label>model</label> <input type="text" class="form-control" formControlName="model" />
+            <span *ngIf="isSubmitted && form.get('model').hasError('required')" style="color: red"
+                >Model is required</span
+            >
+        </div>
+        <div class="mb-3">
+            <label>Year</label> <input type="text" class="form-control" formControlName="year" />
+            <span *ngIf="isSubmitted && form.get('year').hasError('required')" style="color: red"
+                >Year is required</span
+            >
+        </div>
+        <div class="mb-3">
+            <label>Price($)</label> <input type="text" class="form-control" formControlName="price" />
+            <span *ngIf="isSubmitted && form.get('price').hasError('required')" style="color: red"
+                >Price is required</span
+            >
+        </div>
+        <div class="mb-3">
+            <label>Photo</label>
+            <input type="text" class="form-control" formControlName="photo" />
+        </div>
+
+        <button class="btn btn-success" type="submit">Save</button>
+    </div>
+    <div>
+        <a [routerLink]="['/']">Back to List</a>
+    </div>
+</form>
