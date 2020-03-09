@@ -1,11 +1,12 @@
-import { Component, OnInit, TemplateRef } from '@angular/core';
-import { ToasterService } from 'angular2-toaster';
-import { IVehicle } from '../_types/IVehicle';
-import { VehicleService } from '../_services/vehicle-service';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { Router } from '@angular/router';
-import { BsModalService } from 'ngx-bootstrap';
-import { HttpErrorResponse } from '@angular/common/http';
+import { Component, OnInit, TemplateRef } from "@angular/core";
+import { VehicleService } from "../_services/vehicle-service";
+import { ToasterService } from "angular2-toaster";
+import { Router } from "@angular/router";
+import { FormBuilder, FormGroup, Validators } from "@angular/forms";
+import { BsModalRef, BsModalService } from "ngx-bootstrap";
+import { IVehicle } from "../_types/IVehicle";
+import { HttpErrorResponse } from "@angular/common/http";
+
 
 @Component({
     selector: 'app-home',
@@ -22,10 +23,11 @@ export class HomeComponent implements OnInit {
     ) {}
 
     public vehicles: IVehicle[];
-    public modalRef: any;
+    public modalRef: BsModalRef;
     public form: FormGroup;
     public errorMessage: string;
     public isSubmitted: boolean = false;
+    public isOpen = false;
 
     ngOnInit(): void {
         this.getVehicles();
@@ -39,6 +41,8 @@ export class HomeComponent implements OnInit {
     }
 
     public openCreateModal(template: TemplateRef<any>): void {
+        this.isSubmitted = false;
+        this.errorMessage = '';
         this.modalRef = this.modalService.show(template, Object.assign({}, { class: 'modal-lg' }));
     }
 
@@ -48,9 +52,11 @@ export class HomeComponent implements OnInit {
             () => {
                 this.getVehicles();
                 this.modalRef.hide();
+                this.toaster.pop('success', 'Success', 'Vehicle added');
             },
             (error: HttpErrorResponse) => {
                 this.errorMessage = error.error;
+                this.toaster.pop('error', 'Error', this.errorMessage);
             }
         );
     }
@@ -76,6 +82,7 @@ export class HomeComponent implements OnInit {
 
     public confirm(vehicleId: number): void {
         this.vehicleService.DeleteVehicle(vehicleId).subscribe(() => {
+            this.toaster.pop('success', 'Success', 'Vehicle deleted');
             this.getVehicles();
             this.modalRef.hide();
         });
@@ -83,6 +90,9 @@ export class HomeComponent implements OnInit {
 
     public decline(): void {
         this.modalRef.hide();
-        this.form.reset();
+    }
+
+    public openAccordion(openAccordion: boolean) {
+        this.isOpen = openAccordion;
     }
 }

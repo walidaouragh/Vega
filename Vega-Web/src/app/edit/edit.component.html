@@ -4,7 +4,13 @@
 <form *ngIf="vehicle" [formGroup]="form" (ngSubmit)="updateVehicle(form)">
     <alert type="danger" *ngIf="errorMessage">{{ errorMessage }}</alert>
     <accordion>
-        <accordion-group heading="Contact" class="mb-3" formGroupName="contact">
+        <accordion-group class="mb-3" formGroupName="contact" (isOpenChange)="openAccordion($event)" [isOpen]="isOpen">
+            <div accordion-heading>
+                <div class="pull-left float-left mr-5 readonly-label">Contact</div>
+                <span class="badge badge-danger text-center" *ngIf="errorMessage">{{ errorMessage }}</span>
+                <span *ngIf="isOpen" class="pull-right"><i class="fa fa-caret-down"></i></span>
+                <span *ngIf="!isOpen" class="pull-right"><i class="fa fa-caret-right"></i></span>
+            </div>
             <div class="mb-3">
                 <label>Name</label>
                 <input type="text" class="form-control" formControlName="contactName" />

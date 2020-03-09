@@ -1,11 +1,16 @@
 a {
-  color: #0060B6 !important;
-  text-decoration: none;
+    color: #007ad9 !important;
+    text-decoration: none;
 }
 
-a:hover
-{
-  color:#00A0C6 !important;
-  text-decoration:none;
-  cursor:pointer;
+a:hover {
+    color: #3f51b5 !important;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.readonly-label {
+    color: #999 !important;
+    font-weight: 500 !important;
+    white-space: nowrap;
 }

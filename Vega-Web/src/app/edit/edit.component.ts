@@ -1,10 +1,12 @@
-import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute, Router } from '@angular/router';
-import { IVehicle } from '../_types/IVehicle';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { VehicleService } from '../_services/vehicle-service';
-import { HttpErrorResponse } from '@angular/common/http';
+import { Component, OnInit } from "@angular/core";
+import { ActivatedRoute, Router } from "@angular/router";
+import { VehicleService } from "../_services/vehicle-service";
+import { FormBuilder, FormGroup, Validators } from "@angular/forms";
+import { ToasterService } from "angular2-toaster";
+import { IVehicle } from "../_types/IVehicle";
+import { HttpErrorResponse } from "@angular/common/http";
 
+// @ts-ignore
 @Component({
     selector: 'app-edit',
     templateUrl: './edit.component.html',
@@ -15,13 +17,15 @@ export class EditComponent implements OnInit {
         private route: ActivatedRoute,
         private vService: VehicleService,
         private fb: FormBuilder,
-        private router: Router
+        private router: Router,
+        private toaster: ToasterService
     ) {}
     public vehicleId: number;
     public vehicle: IVehicle;
     public form: FormGroup;
     public errorMessage: string;
     public isSubmitted: boolean = false;
+    public isOpen = false;
 
     ngOnInit() {
         this.vehicleId = +this.route.snapshot.paramMap.get('vehicleId');
@@ -57,10 +61,15 @@ export class EditComponent implements OnInit {
         this.vService.updateVehicle(this.vehicleId, form.value).subscribe(
             () => {
                 this.router.navigate(['/']);
+                this.toaster.pop('success', 'Success', 'Vehicle updated');
             },
             (error: HttpErrorResponse) => {
                 this.errorMessage = error.error;
             }
         );
+    }
+
+    public openAccordion(openAccordion: boolean) {
+        this.isOpen = openAccordion;
     }
 }
