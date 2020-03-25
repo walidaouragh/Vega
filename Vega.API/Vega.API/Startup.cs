@@ -44,7 +44,7 @@ namespace Vega.API
             }
 
             Seed.SeedDatabase(context);
-            app.UseCors(x => x.AllowAnyMethod().AllowAnyHeader().WithOrigins("http://localhost:4200"));
+            app.UseCors(x => x.AllowAnyMethod().AllowAnyHeader().WithOrigins("http://localhost:8888"));
             app.UseHttpsRedirection();
             app.UseMvc();
         }

@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations.Schema;
 using Newtonsoft.Json;
 
@@ -17,5 +18,6 @@ namespace Vega.API.Models
         public decimal Price { get; set; }
         public DateTime LastUpdate { get; set; }
         public Contact Contact { get; set; }
+        public List<VehicleFeature> VehicleFeature{ get; set; } = new List<VehicleFeature>();
     }
 }

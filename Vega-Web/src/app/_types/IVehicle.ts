@@ -1,3 +1,5 @@
+import { IFeature } from './IFeature';
+
 export interface Contact {
     contactId: number;
     contactName: string;
@@ -14,4 +16,5 @@ export interface IVehicle {
     price: number;
     lastUpdate: Date;
     contact: Contact;
+    features: IFeature[];
 }

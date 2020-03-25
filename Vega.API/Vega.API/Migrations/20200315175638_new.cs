@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Vega.API.Migrations
 {
-    public partial class initial : Migration
+    public partial class @new : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -61,6 +61,35 @@ namespace Vega.API.Migrations
                         onDelete: ReferentialAction.Restrict);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "VehicleFeature",
+                columns: table => new
+                {
+                    VehicleId = table.Column<int>(nullable: false),
+                    FeatureId = table.Column<int>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_VehicleFeature", x => new { x.VehicleId, x.FeatureId });
+                    table.ForeignKey(
+                        name: "FK_VehicleFeature_Features_FeatureId",
+                        column: x => x.FeatureId,
+                        principalTable: "Features",
+                        principalColumn: "FeatureId",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_VehicleFeature_Vehicles_VehicleId",
+                        column: x => x.VehicleId,
+                        principalTable: "Vehicles",
+                        principalColumn: "VehicleId",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_VehicleFeature_FeatureId",
+                table: "VehicleFeature",
+                column: "FeatureId");
+
             migrationBuilder.CreateIndex(
                 name: "IX_Vehicles_ContactId",
                 table: "Vehicles",
@@ -69,6 +98,9 @@ namespace Vega.API.Migrations
 
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropTable(
+                name: "VehicleFeature");
+
             migrationBuilder.DropTable(
                 name: "Features");
 

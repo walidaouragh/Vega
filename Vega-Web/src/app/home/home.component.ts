@@ -1,12 +1,12 @@
-import { Component, OnInit, TemplateRef } from "@angular/core";
-import { VehicleService } from "../_services/vehicle-service";
-import { ToasterService } from "angular2-toaster";
-import { Router } from "@angular/router";
-import { FormBuilder, FormGroup, Validators } from "@angular/forms";
-import { BsModalRef, BsModalService } from "ngx-bootstrap";
-import { IVehicle } from "../_types/IVehicle";
-import { HttpErrorResponse } from "@angular/common/http";
-
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { VehicleService } from '../_services/vehicle-service';
+import { ToasterService } from 'angular2-toaster';
+import { Router } from '@angular/router';
+import { FormBuilder } from '@angular/forms';
+import { BsModalRef, BsModalService } from 'ngx-bootstrap';
+import { IVehicle } from '../_types/IVehicle';
+import { IgxGridComponent } from 'igniteui-angular';
+import { HttpErrorResponse } from '@angular/common/http';
 
 @Component({
     selector: 'app-home',
@@ -24,56 +24,27 @@ export class HomeComponent implements OnInit {
 
     public vehicles: IVehicle[];
     public modalRef: BsModalRef;
-    public form: FormGroup;
-    public errorMessage: string;
-    public isSubmitted: boolean = false;
-    public isOpen = false;
+    public isLoading: boolean;
+    @ViewChild('grid1', { read: IgxGridComponent, static: true }) public grid1: IgxGridComponent;
 
     ngOnInit(): void {
         this.getVehicles();
-        this.createForm();
     }
 
     public getVehicles(): void {
-        this.vehicleService.getVehicles().subscribe((vehicles: IVehicle[]) => {
-            this.vehicles = vehicles;
-        });
-    }
-
-    public openCreateModal(template: TemplateRef<any>): void {
-        this.isSubmitted = false;
-        this.errorMessage = '';
-        this.modalRef = this.modalService.show(template, Object.assign({}, { class: 'modal-lg' }));
-    }
-
-    public createVehicle(form: any): void {
-        this.isSubmitted = true;
-        this.vehicleService.createVehicle(form.value).subscribe(
-            () => {
-                this.getVehicles();
-                this.modalRef.hide();
-                this.toaster.pop('success', 'Success', 'Vehicle added');
-            },
-            (error: HttpErrorResponse) => {
-                this.errorMessage = error.error;
-                this.toaster.pop('error', 'Error', this.errorMessage);
-            }
-        );
-    }
-
-    public createForm(): void {
-        this.form = this.fb.group({
-            brand: ['', Validators.required],
-            model: ['', Validators.required],
-            year: ['', Validators.required],
-            price: ['', Validators.required],
-            photo: [''],
-            contact: this.fb.group({
-                contactName: ['', Validators.required],
-                contactEmail: ['', Validators.required],
-                contactPhone: ['', Validators.required]
-            })
-        });
+        this.isLoading = true;
+        // Added setTimeout just to check loading
+        setTimeout(() => {
+            this.vehicleService.getVehicles().subscribe(
+                (vehicles: IVehicle[]) => {
+                    this.vehicles = vehicles;
+                    this.isLoading = false;
+                },
+                (error: HttpErrorResponse) => {
+                    console.log(error);
+                }
+            );
+        }, 500);
     }
 
     public openDeleteModal(deleteTemplate: any): void {
@@ -90,9 +61,5 @@ export class HomeComponent implements OnInit {
 
     public decline(): void {
         this.modalRef.hide();
-    }
-
-    public openAccordion(openAccordion: boolean) {
-        this.isOpen = openAccordion;
     }
 }

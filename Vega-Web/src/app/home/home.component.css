@@ -14,3 +14,9 @@ a:hover {
     font-weight: 500 !important;
     white-space: nowrap;
 }
+
+.custom-size{
+  font-size: 18px;
+  width: 16px;
+  height: 16px;
+}

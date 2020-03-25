@@ -10,8 +10,8 @@ using Vega.API.DbContext;
 namespace Vega.API.Migrations
 {
     [DbContext(typeof(VegaDbContext))]
-    [Migration("20200305203318_initial")]
-    partial class initial
+    [Migration("20200315175638_new")]
+    partial class @new
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -78,11 +78,37 @@ namespace Vega.API.Migrations
                     b.ToTable("Vehicles");
                 });
 
+            modelBuilder.Entity("Vega.API.Models.VehicleFeature", b =>
+                {
+                    b.Property<int>("VehicleId");
+
+                    b.Property<int>("FeatureId");
+
+                    b.HasKey("VehicleId", "FeatureId");
+
+                    b.HasIndex("FeatureId");
+
+                    b.ToTable("VehicleFeature");
+                });
+
             modelBuilder.Entity("Vega.API.Models.Vehicle", b =>
                 {
                     b.HasOne("Vega.API.Models.Contact", "Contact")
                         .WithMany()
                         .HasForeignKey("ContactId");
+                });
+
+            modelBuilder.Entity("Vega.API.Models.VehicleFeature", b =>
+                {
+                    b.HasOne("Vega.API.Models.Feature", "Feature")
+                        .WithMany("VehicleFeature")
+                        .HasForeignKey("FeatureId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
+                    b.HasOne("Vega.API.Models.Vehicle", "Vehicle")
+                        .WithMany("VehicleFeature")
+                        .HasForeignKey("VehicleId")
+                        .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618
         }

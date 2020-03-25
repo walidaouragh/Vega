@@ -1,121 +1,81 @@
-<h1>Car Gallery</h1>
-<p>
-    <a (click)="openCreateModal(template)">Add New Car</a>
-</p>
-
-<ng-template #template>
-    <div class="modal-header">
-        <div>
-            <h1 class="modal-title pull-left">Create Car</h1>
+<div class="grid__wrapper">
+    <div class="sample__header  mb-2">
+        <div class="switch-sample">
+            <h5 class="switch-sample__title">Car Gallery 2020</h5>
         </div>
-        <button type="button" class="close pull-right" aria-label="Close" (click)="decline()">
-            <span aria-hidden="true">&times;</span>
-        </button>
+        <div>
+            <a [routerLink]="['add']">Add New Car</a>
+        </div>
     </div>
-    <div class="modal-body">
-        <form [formGroup]="form" (ngSubmit)="createVehicle(form)">
-            <alert type="danger" *ngIf="errorMessage">{{ errorMessage }}</alert>
-            <accordion>
-                <accordion-group
-                    class="mb-3"
-                    formGroupName="contact"
-                    (isOpenChange)="openAccordion($event)"
-                    [isOpen]="isOpen"
-                >
-                    <div accordion-heading>
-                        <div class="pull-left float-left mr-5 readonly-label">Contact</div>
-                        <span class="badge badge-danger text-center" *ngIf="errorMessage">{{ errorMessage }}</span>
-                        <span *ngIf="isOpen" class="pull-right"><i class="fa fa-caret-down"></i></span>
-                        <span *ngIf="!isOpen" class="pull-right"><i class="fa fa-caret-right"></i></span>
-                    </div>
-                    <div class="mb-3">
-                        <label>Name</label>
-                        <input type="text" class="form-control" formControlName="contactName" />
-                        <span
-                            *ngIf="
-                                isSubmitted &&
-                                form
-                                    .get('contact')
-                                    .get('contactName')
-                                    .hasError('required')
-                            "
-                            style="color: red"
-                            >Name is required</span
-                        >
-                    </div>
-                    <div class="mb-3">
-                        <label>Email</label>
-                        <input type="text" class="form-control" formControlName="contactEmail" />
-                        <span
-                            *ngIf="
-                                isSubmitted &&
-                                form
-                                    .get('contact')
-                                    .get('contactEmail')
-                                    .hasError('required')
-                            "
-                            style="color: red"
-                            >Email is required</span
-                        >
-                    </div>
+  <div class="igx-grid__loading" *ngIf="isLoading">
+    <igx-circular-bar [indeterminate]="true">
+    </igx-circular-bar>
+  </div>
 
-                    <div class="mb-3">
-                        <label>Phone</label>
-                        <input type="text" class="form-control" formControlName="contactPhone" />
-                        <span
-                            *ngIf="
-                                isSubmitted &&
-                                form
-                                    .get('contact')
-                                    .get('contactPhone')
-                                    .hasError('required')
-                            "
-                            style="color: red"
-                            >Phone is required</span
-                        >
-                    </div>
-                </accordion-group>
-            </accordion>
-            <div>
-                <div>
-                    <div class="mb-3">
-                        <label>Brand</label>
-                        <input type="text" class="form-control" formControlName="brand" />
-                        <span *ngIf="isSubmitted && form.get('brand').hasError('required')" style="color: red"
-                            >Brand is required</span
-                        >
-                    </div>
-                    <div class="mb-3">
-                        <label>model</label> <input type="text" class="form-control" formControlName="model" />
-                        <span *ngIf="isSubmitted && form.get('model').hasError('required')" style="color: red"
-                            >Model is required</span
-                        >
-                    </div>
-                    <div class="mb-3">
-                        <label>Year</label> <input type="text" class="form-control" formControlName="year" />
-                        <span *ngIf="isSubmitted && form.get('year').hasError('required')" style="color: red"
-                            >Year is required</span
-                        >
-                    </div>
-                    <div class="mb-3">
-                        <label>Price($)</label> <input type="text" class="form-control" formControlName="price" />
-                        <span *ngIf="isSubmitted && form.get('price').hasError('required')" style="color: red"
-                            >Price is required</span
-                        >
-                    </div>
-                    <div class="mb-3">
-                        <label>Photo</label>
-                        <input type="text" class="form-control" formControlName="photo" />
-                    </div>
+    <igx-grid #grid1 [data]="vehicles" [allowFiltering]="true" [paging]="true" [perPage]="10"  *ngIf="!isLoading">
+        <igx-column field="photo" header="Photo" [filterable]="false">
+            <ng-template igxCell let-cell="cell">
+                <div class="cell__inner">
+                    <igx-avatar
+                        [src]="cell.row.rowData.photo || '../../../assets/car.png'"
+                        roundShape="true"
+                        size="small"
+                    >
+                    </igx-avatar>
                 </div>
+            </ng-template>
+        </igx-column>
+        <igx-column field="brand" header="Brand" [sortable]="true"></igx-column>
+        <igx-column field="model" header="Model" [sortable]="true"></igx-column>
+        <igx-column header="Price" [sortable]="true">
+          <ng-template igxCell let-cell="cell">
+            <igx-icon class="custom-size">attach_money</igx-icon> {{cell.rowData.price}}
+          </ng-template>
+        </igx-column>
+        <igx-column field="year" header="Year" [sortable]="true"></igx-column>
+        <igx-column [filterable]="false">
+            <ng-template igxCell let-cell="cell">
+                <button
+                    igxButton="icon"
+                    [igxTooltipTarget]="editTooltip"
+                    [routerLink]="['edit', cell.rowData.vehicleId]"
+                >
+                    <igx-icon color="#007ad9" class="custom-size">edit</igx-icon>
+                    <div #editTooltip="tooltip" igxTooltip>
+                        Edit
+                    </div>
+                </button>
+                <button
+                    igxButton="icon"
+                    [igxTooltipTarget]="detailTooltip"
+                    [routerLink]="['detail', cell.rowData.vehicleId]"
+                >
+                    <igx-icon color="green" class="custom-size">details</igx-icon>
+                    <div #detailTooltip="tooltip" igxTooltip>
+                        Detail
+                    </div>
+                </button>
+                <button igxButton="icon" (click)="openDeleteModal(deleteTemplate)">
+                    <igx-icon color="red" class="custom-size">delete</igx-icon>
+                </button>
+                <ng-template #deleteTemplate>
+                    <div class="modal-body text-center">
+                        <p>Are you sure you want to delete this vehicle?</p>
+                        <button type="button" class="btn btn-danger mr-2" (click)="confirm(cell.rowData.vehicleId)">
+                            Delete
+                        </button>
+                        <button type="button" class="btn btn-default" (click)="decline()">Cancel</button>
+                    </div>
+                </ng-template>
+            </ng-template>
+        </igx-column>
+    </igx-grid>
+</div>
 
-                <button class="btn btn-success mr-2" type="submit">Save</button>
-                <button class="btn btn-default" type="button" (click)="decline()">Cancel</button>
-            </div>
-        </form>
-    </div>
-</ng-template>
-
+<!--<h1>Car Gallery</h1>
+<p>
+    <a [routerLink]="['add']">Add New Car</a>
+</p>
 <table *ngIf="vehicles && vehicles.length > 0; else noVehicles" class="table">
     <thead>
         <tr>
@@ -129,7 +89,7 @@
     </thead>
     <tbody>
         <tr *ngFor="let v of vehicles">
-            <!--<th scope="row"><img src="https://{{ v.photo }}" alt="[Image Missing]" width="100px" /></th>-->
+            &lt;!&ndash;<th scope="row"><img src="https://{{ v.photo }}" alt="[Image Missing]" width="100px" /></th>&ndash;&gt;
             <th scope="row"><img src="{{ v.photo || '../../../assets/user.png' }}" width="100px" /></th>
             <td>{{ v.brand }}</td>
             <td>{{ v.model }}</td>
@@ -152,7 +112,4 @@
             </ng-template>
         </tr>
     </tbody>
-</table>
-<ng-template #noVehicles>
-    <h1>No vehicles avalaible</h1>
-</ng-template>
+</table>-->

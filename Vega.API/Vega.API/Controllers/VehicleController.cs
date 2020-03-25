@@ -61,7 +61,7 @@ namespace Vega.API.Controllers
                 return NotFound($"Could not find vehicle with id: {vehicleId}");
             }
 
-            return Ok(vehicle);
+            return Ok(MapVehicleToVehicleResult(vehicle));
         }
 
          [HttpPut("{vehicleId}")]
@@ -118,11 +118,19 @@ namespace Vega.API.Controllers
                     ContactName = vehicle.Contact.ContactName,
                     ContactEmail = vehicle.Contact.ContactEmail,
                     ContactPhone = vehicle.Contact.ContactPhone
-                }
+                },
+                VehicleFeature = new List<VehicleFeature>()
             };
+            foreach (var v in vehicle.VehicleFeature)
+            {
+               result.VehicleFeature.Add(new VehicleFeature()
+               {
+                   FeatureId = v.FeatureId
+               });
+            }
 
             await _vegaRepository.CreateVehicle(result);
-            return Ok(result);
+            return Ok();
 
         }
 
@@ -148,8 +156,17 @@ namespace Vega.API.Controllers
                 Year = vehicle.Year,
                 Price = vehicle.Price,
                 LastUpdate = vehicle.LastUpdate,
-                Contact = vehicle.Contact
+                Contact = vehicle.Contact,
+                Features = new List<Feature>()
             };
+            foreach (var v in vehicle.VehicleFeature)
+            {
+                vehicleResult.Features.Add(new Feature()
+                {
+                    FeatureId = v.Feature.FeatureId,
+                    FeatureName = v.Feature.FeatureName
+                });
+            }
 
             return vehicleResult;
         }

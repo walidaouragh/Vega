@@ -1,7 +1,7 @@
-<h3>Edit</h3>
+<h3>Create</h3>
 <h4>Car</h4>
 <hr />
-<form *ngIf="vehicle" [formGroup]="form" (ngSubmit)="updateVehicle(form)">
+<form [formGroup]="form" (ngSubmit)="createVehicle(form)">
     <alert type="danger" *ngIf="errorMessage">{{ errorMessage }}</alert>
     <accordion>
         <accordion-group class="mb-3" formGroupName="contact" (isOpenChange)="openAccordion($event)" [isOpen]="isOpen">
@@ -60,47 +60,47 @@
         </accordion-group>
     </accordion>
     <div>
-        <div class="mb-3">
-            <label>Brand</label>
-            <input type="text" class="form-control" formControlName="brand" />
-            <span *ngIf="isSubmitted && form.get('brand').hasError('required')" style="color: red"
-                >Brand is required</span
-            >
-        </div>
-        <div class="mb-3">
-            <label>model</label> <input type="text" class="form-control" formControlName="model" />
-            <span *ngIf="isSubmitted && form.get('model').hasError('required')" style="color: red"
-                >Model is required</span
-            >
-        </div>
-        <div class="mb-3">
-            <label>Year</label> <input type="text" class="form-control" formControlName="year" />
-            <span *ngIf="isSubmitted && form.get('year').hasError('required')" style="color: red"
-                >Year is required</span
-            >
-        </div>
-        <div class="mb-3">
-            <label>Price($)</label> <input type="text" class="form-control" formControlName="price" />
-            <span *ngIf="isSubmitted && form.get('price').hasError('required')" style="color: red"
-                >Price is required</span
-            >
-        </div>
-        <div class="mb-3">
-            <label>Photo</label>
-            <input type="text" class="form-control" formControlName="photo" />
+        <div>
+            <div class="mb-3">
+                <label>Brand</label>
+                <input type="text" class="form-control" formControlName="brand" />
+                <span *ngIf="isSubmitted && form.get('brand').hasError('required')" style="color: red"
+                    >Brand is required</span
+                >
+            </div>
+            <div class="mb-3">
+                <label>model</label> <input type="text" class="form-control" formControlName="model" />
+                <span *ngIf="isSubmitted && form.get('model').hasError('required')" style="color: red"
+                    >Model is required</span
+                >
+            </div>
+            <div class="mb-3">
+                <label>Year</label> <input type="text" class="form-control" formControlName="year" />
+                <span *ngIf="isSubmitted && form.get('year').hasError('required')" style="color: red"
+                    >Year is required</span
+                >
+            </div>
+            <div class="mb-3">
+                <label>Price($)</label> <input type="text" class="form-control" formControlName="price" />
+                <span *ngIf="isSubmitted && form.get('price').hasError('required')" style="color: red"
+                    >Price is required</span
+                >
+            </div>
+            <div class="mb-3">
+                <label>Photo</label>
+                <input type="text" class="form-control" formControlName="photo" />
+            </div>
         </div>
         <div class="mb-3">
             <mat-form-field style="width: 100%">
                 <mat-label>Features</mat-label>
-                <mat-select multiple formControlName="features">
-                    <mat-option *ngFor="let f of vehicle.features" [value]="f">
-                        {{ f.featureName }}
-                    </mat-option>
+                <mat-select multiple formControlName="VehicleFeature">
+                    <mat-option *ngFor="let f of features" [value]="f">{{ f.featureName }}</mat-option>
                 </mat-select>
             </mat-form-field>
         </div>
 
-        <button class="btn btn-success" type="submit">Save</button>
+        <button class="btn btn-success mr-2 mt-3" type="submit">Save</button>
     </div>
     <div>
         <a [routerLink]="['/']">Back to List</a>

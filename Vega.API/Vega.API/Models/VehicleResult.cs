@@ -13,5 +13,6 @@ namespace Vega.API.Models
         public decimal Price { get; set; }
         public DateTime LastUpdate { get; set; }
         public Contact Contact { get; set; }
+        public List<Feature> Features { get; set; }
     }
 }

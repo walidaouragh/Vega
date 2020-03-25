@@ -18,7 +18,9 @@ namespace Vega.API.Repository
         public  IQueryable<Vehicle> GetVehicles()
         {
             return _vegaDbContext.Vehicles
-                .Include(x => x.Contact);
+                .Include(x => x.Contact)
+                .Include(x => x.VehicleFeature)
+                .ThenInclude(x => x.Feature);
         }
 
         public IQueryable<Feature> GetFeatures()
@@ -30,6 +32,8 @@ namespace Vega.API.Repository
         {
             return _vegaDbContext.Vehicles
                 .Include(x => x.Contact)
+                .Include(x => x.VehicleFeature)
+                .ThenInclude(x => x.Feature)
                 .Where(x => x.VehicleId == vehicleId);
 
         }

@@ -13,5 +13,15 @@ namespace Vega.API.DbContext
         {
 
         }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<VehicleFeature>()
+                .HasKey(t => new { t.VehicleId, t.FeatureId });
+
+            modelBuilder.Entity<VehicleFeature>()
+                .HasOne(pt => pt.Vehicle)
+                .WithMany(p => p.VehicleFeature)
+                .HasForeignKey(pt => pt.VehicleId);
+        }
     }
 }
