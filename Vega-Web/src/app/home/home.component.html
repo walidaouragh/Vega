@@ -7,12 +7,11 @@
             <a [routerLink]="['add']">Add New Car</a>
         </div>
     </div>
-  <div class="igx-grid__loading" *ngIf="isLoading">
-    <igx-circular-bar [indeterminate]="true">
-    </igx-circular-bar>
-  </div>
+    <div class="igx-grid__loading" *ngIf="isLoading">
+        <igx-circular-bar [indeterminate]="true"> </igx-circular-bar>
+    </div>
 
-    <igx-grid #grid1 [data]="vehicles" [allowFiltering]="true" [paging]="true" [perPage]="10"  *ngIf="!isLoading">
+    <igx-grid [data]="vehicles" [allowFiltering]="true" [paging]="true" [perPage]="10" *ngIf="!isLoading">
         <igx-column field="photo" header="Photo" [filterable]="false">
             <ng-template igxCell let-cell="cell">
                 <div class="cell__inner">
@@ -28,9 +27,9 @@
         <igx-column field="brand" header="Brand" [sortable]="true"></igx-column>
         <igx-column field="model" header="Model" [sortable]="true"></igx-column>
         <igx-column header="Price" [sortable]="true">
-          <ng-template igxCell let-cell="cell">
-            <igx-icon class="custom-size">attach_money</igx-icon> {{cell.rowData.price}}
-          </ng-template>
+            <ng-template igxCell let-cell="cell">
+                <igx-icon class="custom-size">attach_money</igx-icon> {{ cell.rowData.price }}
+            </ng-template>
         </igx-column>
         <igx-column field="year" header="Year" [sortable]="true"></igx-column>
         <igx-column [filterable]="false">
@@ -55,18 +54,36 @@
                         Detail
                     </div>
                 </button>
-                <button igxButton="icon" (click)="openDeleteModal(deleteTemplate)">
+
+                <button igxButton="icon" (click)="deleteDialog.open()">
                     <igx-icon color="red" class="custom-size">delete</igx-icon>
                 </button>
-                <ng-template #deleteTemplate>
-                    <div class="modal-body text-center">
-                        <p>Are you sure you want to delete this vehicle?</p>
-                        <button type="button" class="btn btn-danger mr-2" (click)="confirm(cell.rowData.vehicleId)">
-                            Delete
-                        </button>
-                        <button type="button" class="btn btn-default" (click)="decline()">Cancel</button>
+                <!--  <igx-dialog
+                    #deleteDialog
+                    title="Confirmation"
+                    leftButtonLabel="Cancel"
+                    (onLeftButtonSelect)="deleteDialog.close()"
+                    rightButtonLabel="Delete"
+                    (onRightButtonSelect)="confirm(cell.rowData.vehicleId)"
+                    message="Are you sure you want to delete this vehicle?"
+                >
+                </igx-dialog>-->
+                <igx-dialog
+                    #deleteDialog
+                    [closeOnOutsideSelect]="true"
+                    message="Are you sure you want to delete this vehicle?"
+                >
+                    <igx-dialog-title>
+                        <div class="dialog-container">
+                            <igx-icon>error</igx-icon>
+                            <div class="dialog-title">Delete this vehicle?</div>
+                        </div>
+                    </igx-dialog-title>
+                    <div igxDialogActions class="dialog-container button">
+                        <button igxButton class="danger" (click)="confirm(cell.rowData.vehicleId)">DELETE</button>
+                        <button igxButton class="default" (click)="deleteDialog.close()">CANCEL</button>
                     </div>
-                </ng-template>
+                </igx-dialog>
             </ng-template>
         </igx-column>
     </igx-grid>

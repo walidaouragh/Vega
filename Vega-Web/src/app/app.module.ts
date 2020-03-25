@@ -15,7 +15,14 @@ import { VehicleService } from './_services/vehicle-service';
 import { AddComponent } from './add/add.component';
 import { MatSelectModule } from '@angular/material';
 import { MatFormFieldModule } from '@angular/material/form-field';
-import { IgxAvatarModule, IgxGridModule, IgxIconModule, IgxSwitchModule, IgxTooltipModule } from 'igniteui-angular';
+import {
+    IgxAvatarModule,
+    IgxDialogModule,
+    IgxGridModule,
+    IgxIconModule,
+    IgxSwitchModule,
+    IgxTooltipModule
+} from 'igniteui-angular';
 
 @NgModule({
     declarations: [AppComponent, HomeComponent, DetailComponent, EditComponent, PhonePipe, AddComponent],
@@ -36,7 +43,8 @@ import { IgxAvatarModule, IgxGridModule, IgxIconModule, IgxSwitchModule, IgxTool
         IgxIconModule,
         IgxTooltipModule,
         IgxAvatarModule,
-        IgxSwitchModule
+        IgxSwitchModule,
+        IgxDialogModule
     ],
     providers: [VehicleService, ToasterService],
     bootstrap: [AppComponent]

@@ -15,8 +15,44 @@ a:hover {
     white-space: nowrap;
 }
 
-.custom-size{
-  font-size: 18px;
-  width: 16px;
-  height: 16px;
+.custom-size {
+    font-size: 18px;
+    width: 16px;
+    height: 16px;
+}
+
+/deep/.igx-dialog__window {
+    width: 600px !important;
+}
+
+/deep/.igx-typography .igx-dialog__window-content {
+    letter-spacing: 0 !important;
+}
+
+.dialog-container {
+    display: flex;
+    flex-direction: row;
+    margin-left: 24px;
+}
+
+.buttons-sample {
+    display: flex;
+}
+.danger {
+    font-size: 12px;
+    border-radius: 12px;
+    text-transform: capitalize;
+    height: auto;
+    background-color: red;
+    color: #fff;
+    padding: 5px 16px;
+}
+.default {
+    font-size: 12px;
+    border-radius: 12px;
+    text-transform: capitalize;
+    height: auto;
+    background-color: #979797;
+    color: #fff;
+    padding: 5px 16px;
 }

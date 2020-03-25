@@ -1,11 +1,8 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { VehicleService } from '../_services/vehicle-service';
 import { ToasterService } from 'angular2-toaster';
-import { Router } from '@angular/router';
-import { FormBuilder } from '@angular/forms';
-import { BsModalRef, BsModalService } from 'ngx-bootstrap';
 import { IVehicle } from '../_types/IVehicle';
-import { IgxGridComponent } from 'igniteui-angular';
+import { IgxDialogComponent } from 'igniteui-angular';
 import { HttpErrorResponse } from '@angular/common/http';
 
 @Component({
@@ -14,18 +11,12 @@ import { HttpErrorResponse } from '@angular/common/http';
     styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-    constructor(
-        private vehicleService: VehicleService,
-        private toaster: ToasterService,
-        private router: Router,
-        private fb: FormBuilder,
-        private modalService: BsModalService
-    ) {}
+    constructor(private vehicleService: VehicleService, private toaster: ToasterService) {}
 
     public vehicles: IVehicle[];
-    public modalRef: BsModalRef;
     public isLoading: boolean;
-    @ViewChild('grid1', { read: IgxGridComponent, static: true }) public grid1: IgxGridComponent;
+
+    @ViewChild('dialog', { static: false }) deleteDialog: IgxDialogComponent;
 
     ngOnInit(): void {
         this.getVehicles();
@@ -46,20 +37,11 @@ export class HomeComponent implements OnInit {
             );
         }, 500);
     }
-
-    public openDeleteModal(deleteTemplate: any): void {
-        this.modalRef = this.modalService.show(deleteTemplate, { class: 'modal-lg modal-dialog-centered' });
-    }
-
     public confirm(vehicleId: number): void {
         this.vehicleService.DeleteVehicle(vehicleId).subscribe(() => {
             this.toaster.pop('success', 'Success', 'Vehicle deleted');
             this.getVehicles();
-            this.modalRef.hide();
+            this.deleteDialog.close();
         });
-    }
-
-    public decline(): void {
-        this.modalRef.hide();
     }
 }
