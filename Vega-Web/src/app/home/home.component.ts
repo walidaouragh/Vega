@@ -2,19 +2,38 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import { VehicleService } from '../_services/vehicle-service';
 import { ToasterService } from 'angular2-toaster';
 import { IVehicle } from '../_types/IVehicle';
-import { IgxDialogComponent } from 'igniteui-angular';
+import {
+    HorizontalAlignment,
+    IgxDialogComponent,
+    PositionSettings,
+    slideInTop,
+    slideOutBottom,
+    VerticalAlignment
+} from 'igniteui-angular';
 import { HttpErrorResponse } from '@angular/common/http';
+import { useAnimation } from '@angular/animations';
 
 @Component({
     selector: 'app-home',
     templateUrl: './home.component.html',
-    styleUrls: ['./home.component.css']
+    styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
     constructor(private vehicleService: VehicleService, private toaster: ToasterService) {}
 
     public vehicles: IVehicle[];
     public isLoading: boolean;
+    public newPositionSettings: PositionSettings = {
+        openAnimation: useAnimation(slideInTop, { params: { duration: '500ms' } }),
+        closeAnimation: useAnimation(slideOutBottom, {
+            params: { duration: '500ms' }
+        }),
+        horizontalDirection: HorizontalAlignment.Center,
+        verticalDirection: VerticalAlignment.Middle,
+        horizontalStartPoint: HorizontalAlignment.Center,
+        verticalStartPoint: VerticalAlignment.Middle,
+        minSize: { height: 200, width: 600 }
+    };
 
     @ViewChild('dialog', { static: false }) deleteDialog: IgxDialogComponent;
 

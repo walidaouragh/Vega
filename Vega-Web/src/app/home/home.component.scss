@@ -20,12 +20,11 @@ a:hover {
     width: 16px;
     height: 16px;
 }
-
-/deep/.igx-dialog__window {
+::ng-deep.igx-dialog__window {
     width: 600px !important;
 }
 
-/deep/.igx-typography .igx-dialog__window-content {
+::ng-deep.igx-typography .igx-dialog__window-content::ng-deep {
     letter-spacing: 0 !important;
 }
 
@@ -46,6 +45,10 @@ a:hover {
     background-color: red;
     color: #fff;
     padding: 5px 16px;
+    &:hover {
+        background-color: #fff;
+        color: red;
+    }
 }
 .default {
     font-size: 12px;
@@ -55,4 +58,8 @@ a:hover {
     background-color: #979797;
     color: #fff;
     padding: 5px 16px;
+    &:hover {
+        background-color: #fff;
+        color: #979797;
+    }
 }

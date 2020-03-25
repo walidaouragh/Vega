@@ -6,7 +6,7 @@ import { VehicleService } from '../_services/vehicle-service';
 @Component({
     selector: 'app-detail',
     templateUrl: './detail.component.html',
-    styleUrls: ['./detail.component.css']
+    styleUrls: ['./detail.component.scss']
 })
 export class DetailComponent implements OnInit {
     constructor(private route: ActivatedRoute, private vService: VehicleService) {}
